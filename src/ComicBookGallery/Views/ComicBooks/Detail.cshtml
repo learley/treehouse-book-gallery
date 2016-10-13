@@ -1,8 +1,7 @@
 ﻿@model ComicBookGallery.Models.ComicBook
 
 @{
-    Layout = "~/Views/Shared/_Layout.cshtml";
-    ViewBag.Title = Model.DisplayTest;
+    ViewBag.Title = Model.DisplayText;
 }
 
 <h2>@Model.DisplayTest</h2>
@@ -31,7 +30,7 @@
     </div>
     <div class="col-md-6">
         <img src="/Images/@Model.CoverImageFileName" 
-            alt="@Model.DisplayTest" class="img-responsive" />
+            alt="@Model.DisplayText" class="img-responsive" />
     </div>
 </div>
 
